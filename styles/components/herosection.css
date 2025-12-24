@@ -1,0 +1,147 @@
+@import url(../global.css);
+
+.hero-section {
+  background: linear-gradient(#fff, #f5f7f7);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0.5rem 1rem;
+}
+
+.hero-section h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 3rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, .12);
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.passenger-app-link,
+.pwa-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 0 2rem;
+  border-radius: var(--border-radius);
+  height: 3.25rem;
+}
+
+.passenger-app-link {
+  color: #fff;
+  background:#000;
+  transition: opacity 0.15s ease;
+}
+
+.passenger-app-link:hover {
+  opacity: 0.7;
+}
+
+.pwa-link {
+  color: #000;
+  background: transparent;
+  border: 2px solid #000;
+}
+
+@media (min-width: 48em) and (max-width: 77.5em) {
+ .hero-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 1rem;
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap: 0;
+    width: 100%;
+    padding: 0.5rem 2rem;
+  }
+
+  .hero-banner {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  .hero-section h1 {
+    font-size: 2.2rem;
+    padding: 2rem;
+    text-align: right;
+    line-height:3rem;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .hero-btns {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .passenger-app-link,
+  .pwa-link {
+    font-size: 1rem;
+    padding: 2rem 1rem;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width:77.5em) {
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 0;
+    width: 100%;
+    padding: 5rem 10%;
+  }
+
+  .hero-banner {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 0;
+    text-align: right;
+    line-height: 4.5rem;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .hero-btns {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .passenger-app-link,
+  .pwa-link {
+    height: 4.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .passenger-app-link {
+    width: 45%;
+  }
+
+  .pwa-link {
+    width: 55%;
+  }
+}

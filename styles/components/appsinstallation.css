@@ -1,0 +1,150 @@
+@import url(../global.css);
+
+.apps-installation {
+  padding: 5rem 4%;
+  width: 100%;
+}
+
+.apps-installation-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  background: linear-gradient(90deg, var(--orange-50, #fff0e9) 0, #f4f1f0 100%);
+  border-radius: 1.5rem;
+  width: 100%;
+}
+
+.install-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.apps-installation-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  padding: 0 1rem 2rem;
+}
+
+.apps-installation-info-container .title {
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.apps-installation-container .description {
+  color: #333;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.apps-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.tapsi-btn,
+.tapsi-driver-btn {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  font-size: 1.125rem;
+  font-weight: 500;
+  height: 3.25rem;
+  line-height: 2rem;
+  min-width: 6rem;
+  padding: 0 1.5rem;
+  transition: all 0.15s ease;
+}
+
+.tapsi-btn {
+  background-image: linear-gradient(91deg, #f73, #ff5722 50%, #e54917);
+  color: #fff;
+  width: 10rem;
+}
+
+.tapsi-btn:hover {
+  filter: brightness(87%);
+}
+
+.tapsi-driver-btn {
+  background: #fff;
+  color: #000;
+   width: 11rem;
+}
+
+.tapsi-driver-btn:hover {
+  background: rgba(0, 0, 0, .122);
+}
+
+@media (min-width:48em) and (max-width: 68em) {
+  .apps-installation {
+    padding: 4rem 4%;
+  }
+
+  .apps-installation-container {
+    flex-direction: row;
+  }
+
+  .install-image img {
+    height: 320px;
+  }
+
+  .apps-installation-info-container {
+    gap: 1rem;
+    padding: 3rem 3rem 3rem 0;
+    width: 55%;
+  }
+
+  .apps-links {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .apps-installation-info-container .title {
+    font-size: 1.75rem;
+  }
+
+  .apps-installation-container .description {
+    font-size: 1rem;
+  }
+
+  .tapsi-btn,
+  .tapsi-driver-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:68em) {
+  .apps-installation {
+    padding: 5rem 10%;
+  }
+
+  .apps-installation-container {
+    flex-direction: row;
+  }
+
+  .install-image img {
+    height: 350px;
+  }
+
+  .apps-installation-info-container {
+    gap: 1rem;
+    padding: 4rem 4rem 4rem 0;
+    width: 55%;
+  }
+
+  .apps-links {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tapsi Clone</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="" class="navbar-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="102" height="22" viewBox="0 0 102 22">
+                      <g fill-rule="evenodd">
+                          <path class="logo-text" fill="#000" d="M102 5.946h-3.222v4.28H91.8v-4.28h-3.221v4.28h-5.637a1.878 1.878 0 0 1-1.879-1.872V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873 1.878 1.878 0 0 1-1.879-1.873V5.946h-3.221v2.408a1.878 1.878 0 0 1-1.879 1.873h-1.879V5.946h-3.22v4.28h-17.18v3.212h3.758v.535c0 2.656-2.167 4.816-4.831 4.816-2.664 0-4.832-2.16-4.832-4.816v-3.746H37.58v3.746c0 4.426 3.613 8.027 8.053 8.027 4.44 0 8.052-3.6 8.052-8.027v-.535H68.985a5.09 5.09 0 0 0 3.489-1.381 5.09 5.09 0 0 0 3.49 1.38 5.09 5.09 0 0 0 3.489-1.38 5.089 5.089 0 0 0 3.489 1.38H102V5.947z"></path>
+                          <path class="logo-text" fill="#000" d="M84.702 19.297h3.854V22h3.304v-5.946h-7.158zM102 0h-6.561v2.973H102z"></path>
+                          <path class="logo-icon" fill="#FF5B35" d="M26.842 11.297H10.737V5.946h16.105zM26.842 22H0v-5.351h26.842z"></path>
+                      </g>
+        </svg>
+      </a>
+
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li>
+            <a href="" class="nav-link">ثبت نام راننده خودرو</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">ثبت نام راننده موتور</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">وبلاگ</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">پشتیبانی</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">اپلیکیشن رانندگان</a>
+          </li>
+          <li>
+            <a href="" class="app-link">دانلود تپسی</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="btnOpen">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 24 24">
+          <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
+          </path>
+        </svg>
+      </div>
+
+      <div id="btnClose" class="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 50 50">
+        <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path>
+        </svg>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+        <h1>
+          <span>با سوپر اپلیکیشن تپسی،</span>
+          <span>زندگی به فرمان توست.</span>
+        </h1>
+
+        <div class="hero-banner">
+          <img src="images/hero.webp" alt="A guy in Tehran city using Tapsi app">
+        </div>
+
+        <div class="hero-btns">
+          <a href="" class="passenger-app-link"><span>دانلود اپلیکیشن</span> <span>مسافر</span></a>
+          <a href="" class="pwa-link"><span>نسخه وب اپلیکیشن</span> <span>(PWA)</span></a>
+        </div>
+    </section>
+
+    <section class="tapsi-services">
+      <h2>سرویس های تپسی</h2>
+
+      <nav class="service-btns">
+        <button class="service-btn">
+          <img class="service-btn-img active" src="images/cc-classic.webp" alt="ordinary car" width="95" height="95">
+          <p class="service-btn-info active">کلاسیک</p>
+        </button>
+        <button class="service-btn">
+          <img class="service-btn-img" src="images/cc-wait-and-share.webp" alt="car with two people" width="95" height="95">
+          <p class="service-btn-info">با همسفر</p>
+        </button>
+        <button class="service-btn">
+          <img class="service-btn-img" src="images/cc-delivery.webp" alt="motorcycle for carrying packages" width="95" height="95">
+          <p class="service-btn-info">ارسال بسته</p>
+        </button>
+        <button class="service-btn">
+          <img class="service-btn-img" src="images/cc-tel.webp" alt="old telephone" width="95" height="95">
+          <p class="service-btn-info">تلفنی</p>
+        </button>
+        <button class="service-btn">
+          <img class="service-btn-img" src="images/cc-plus.webp" alt="luxury car" width="95" height="95">
+          <p class="service-btn-info">پلاس</p>
+        </button>
+        <button class="service-btn">
+          <img class="service-btn-img" src="images/cc-intercity.webp" alt="car and a suitcase" width="95" height="95">
+          <p class="service-btn-info">بین شهری</p>
+        </button>
+      </nav>
+
+      <div class="service-container active">
+        <div class="service-info">
+          <h3 class="title">تپسی کلاسیک</h3>
+          <p class="description">با سرویس تپسی کلاسیک، سریع، آسان و به‌صرفه به مقصد برسید. دراین سرویس می‌توانید به دو یا چند مقصد سفر کنید.</p>
+        </div>
+
+        <div class="service-img">
+          <img src="images/illus-classic.webp" alt="" width="486" height="350">
+        </div>
+      </div>
+      <div class="service-container">
+        <div class="service-info">
+          <h3 class="title">با همسفر</h3>
+          <p class="description">در سرویس باهمسفر تپسی، با یک مسافر دیگر هم مسیر می شوید. هزینه سفر شما با این سرویس ٪۳۵ به صرفه‌تر از سفر کلاسیک است.</p>
+        </div>
+
+        <div class="service-img">
+          <img src="images/illus-wait-and-share.webp" alt="" width="486" height="350">
+        </div>
+      </div>
+      <div class="service-container">
+      <div class="service-info">
+        <h3 class="title">ارسال بسته</h3>
+        <p class="description">شما می‌توانید با استفاده از سرویس ارسال بسته تپسی مرسولات خود را با موتوپیک(بسته کوچک) یا اتوپیک (بسته بزرگ) ارسال کنید.</p>
+      </div>
+
+        <div class="service-img">
+          <img src="images/illus-delivery.webp" alt="" width="486" height="350">
+        </div>
+      </div>
+      <div class="service-container">
+        <div class="service-info">
+          <h3 class="title">تپسی تلفنی</h3>
+          <p class="description">سرویس تپسی تلفنی یا ۱۶۳۰، این امکان را به شما می‌دهد که بدون نیاز به اینترنت و اپلیکیشن، درخواست خودرو بدهید.کافیست با شماره ۱۶۳۰ تماس بگیرید.</p>
+        </div>
+
+        <div class="service-img">
+          <img src="images/illus-tel.webp" alt="" width="486" height="350">
+        </div>
+      </div>
+      <div class="service-container">
+        <div class="service-info">
+          <h3 class="title">تپسی پلاس</h3>
+          <p class="description">سرویس تپسی پلاس با ماشین‌های مدل بالاتر و کارکرد کمتر ارائه می‌شود. در این سرویس امکان تعیین چند مقصد و توقف در مسیر وجود دارد.</p>
+        </div>
+
+        <div class="service-img">
+          <img src="images/illus-plus.webp" alt="" width="486" height="350">
+        </div>
+      </div>
+      <div class="service-container">
+        <div class="service-info">
+          <h3 class="title">بین شهری</h3>
+          <p class="description">با تاکسی اینترنتی بین شهری تپسی می‌توانید با قیمت مناسب و امنیت بالا به شهرهای دور و نزدیک سفر کنید.</p>
+        </div>
+
+        <div class="service-img">
+          <img src="images/illus-intercity.webp" alt="" width="486" height="350">
+        </div>
+      </div>
+    </section>
+
+    <section class="driver-register">
+      <div class="register-image">
+        <img src="images/section-driver.webp" alt="A driver using Tapsi in his car" width="486" height="350">
+      </div>
+
+      <div class="register-info-container">
+        <div class="register-info">
+          <h2 class="title">در کمتر از 10 دقیقه ثبت نام کنید</h2>
+          <ul>
+            <li class="benefits">
+            کسب درآمد بالا تا ۶۵ میلیون تومان
+            </li>
+            <li class="benefits">
+              ۵ مرتبه تسویه آنی در روز
+            </li>
+            <li class="benefits">
+              تخفیف لوازم مصرفی خودرو از تپسی گاراژ
+            </li>
+            <li class="benefits">
+              استفاده از امکانات باشگاه سفیران تپسی
+            </li>
+          </ul>
+        </div>
+
+        <div class="register-btns">
+          <button class="driver-register-btn">
+            <a href="" class="driver-register-link">ثبت نام راننده خودرو</a>
+          </button>
+          <button class="driver-app-btn">
+            <a href="" class="driver-app-link">دانلود برنامه رانندگان</a>
+            <i class="ic-left-arrow"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="corporate-services">
+      <div class="corporate-info-container">
+        <div class="corporate-info">
+          <h2 class="title">خدمات ویژه کسب کارها</h2>
+          <p class="description">شما می‌توانید از امکانات ویژه تپسی برای کسب وکارها مانند درخواست نامحدود خودرو و پیک به صورت همزمان و ایجاد کد تخفیف سازمانی استفاده کنید.
+          </p>
+        </div>
+
+        <div class="corporate-btns">
+          <button class="corporate-btn">
+          <a href="" class="corporate-link">پنل سازمانی تپسی</a>
+          </button>
+          <button class="corporate-discount-code-btn">
+          <a href="" class="corporate-discount-code">خرید کد تخفیف سازمانی</a>
+          <i class="ic-left-arrow"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="corporate-image">
+        <img src="images/section-corporate.webp" alt="A woman using Tapsi on her laptop and phone in company" width="486" height="350">
+      </div>
+    </section>
+
+    <section class="apps-installation">
+      <div class="apps-installation-container">
+        <div class="apps-installation-info-container">
+          <h2 class="title">همین حالا تپسی رو نصب کن!</h2>
+          <p class="description">با نصب سوپر اپلیکیشن تپسی می‌توانید علاوه بر درخواست خودرو، از سرویس‌های
+          ارسال بسته، سفارش غذا، خرید، سوپرمارکت و داروخانه نیز استفاده کنید.
+          </p>
+
+      <div class="apps-links">
+          <a href="" class="tapsi-btn">اپلیکیشن تپسی</a>
+          <a href="" class="tapsi-driver-btn">اپلیکیشن رانندگان</a>
+        </div>
+      </div>
+
+      <div class="install-image">
+        <img src="images/section-install.webp" alt="a mobile in hand of somebody" width="486" height="350">
+      </div>
+      </div>
+    </section>
+
+    <section class="blogs-container">
+      <h2>تازه ترین وبلاگ های تپسی</h2>
+
+      <div class="posts-container">
+        <a href="">
+        <div class="blog-box">
+        <img src="images/log-DriverArtboard-14.jpg" alt="A woman in car with her phone" width="307" height="172">
+        <h3 class="title">پرداخت هزینه سفرهای تپسی با اعتبار دیجی‌پی</h3>
+        <p class="description">با اعتبار تک‌قسطه دیجی‌پی، پرداخت هزینه‌ سفرهای تپسی آسان‌تر از همیشه شده است. دیگر نیازی به پرداخت نقدی یا ورود به درگاه بانکی نیست؛ تنها با فعال‌سازی اعتبار خود در دیجی‌پی، می‌توانید سفرهای روزمره‌تان را انجام دهید و در ابتدای هر ماه، اصل مبلغ را تسویه کنید. این همکاری میان تپسی و دیجی‌پی، تجربه‌ای نو …
+        </p>
+      </div>
+      </a>
+      <a href="">
+        <div class="blog-box">
+        <img src="images/log-DriverArtboard-2.jpg" alt="A phone showing using Tapsi app" width="307" height="172">
+        <h3 class="title">معرفی 15 شغل دوم با درآمد بالا</h3>
+        <p class="description">
+          بسیاری از ما وقتی به شغل دوم فکر می‌کنیم، هیچ پافشاری خاصی روی درآمد بالا نداریم؛ چون انتظارمان از شغل دوم، معمولاً یک کار پاره‌وقت برای افزایش درآمد اصلی است. اما برخلاف تصور خیلی‌ها، شغل دوم با درآمد بالا هم وجود دارد؛ مثل برنامه‌نویسی، فروش آنلاین و کار در تاکسی‌های اینترنتی مثل تپسی. در ادامه، …
+        </p>
+      </div>
+      </a>
+      <a href="">
+        <div class="blog-box">
+        <img src="images/ChatGPT-Image-Nov-4-2025-11_47_11-AM-1-1.png" alt="Changing car brake fluid" width="307" height="172">
+        <h3 class="title">زمان تعویض روغن ترمز خودرو</h3>
+        <p class="description">
+          پدال ترمز را فشار می‌دهید، اما خودرو با تأخیر می‌ایستد؛ این اتفاق، اولین نشانه برای تعویض روغن ترمز است. روغن ترمز یکی از مهم‌ترین مایعات در خودرو است که فشار پای شما را از پدال ترمز به چرخ‌ها منتقل می‌کند. با گذشت زمان و به‌دلیل جذب رطوبت و گرما، خاصیت روغن ترمز کم می‌شود. زمان …
+        </p>
+      </div>
+      </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="brand-col">
+          <a href="">
+            <img class="footer-logo" src="images/tapsi-logo-white.svg" alt="Tapsi logo">
+          </a>
+          <h3 class="brand-info">اپلیکیشن درخواست خودرو و پیک</h3>
+          <p class="copy-right-desktop">تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است. </p>
+        </div>
+
+        <div class="footer-col">
+            <h6>تپسی</h6>
+            <a class="link" href="https://blog.tapsi.ir/">وبلاگ تپسی</a>
+            <a class="link" href="https://careers.tapsi.ir/">فرصت شغلی</a>
+            <a class="link" href="https://tapsi.ir/contact">تماس با ما</a>
+            <a class="link" href="https://tapsi.ir/brand">لوگو و هویت سازمانی</a>
+            <a class="link" href="https://tapsi.ir/field">استخدام بازاریاب</a>
+            <a class="link" href="https://investors.tapsi.ir/">امور سهام</a>
+            <a class="link" href="https://tapsi.ir/video">ویدئوها</a>
+        </div>
+        <div class="footer-col">
+            <h6>مسافران</h6>
+            <a class="link" href="https://tapsi.ir/passengers/dl">دانلود اپ مسافر</a>
+            <a class="link" href="https://app.tapsi.cab">نسخه وب تپسی</a>
+            <a class="link" href="https://tapsi.ir/passengers/faq">پرسش&zwnj;های متداول مسافران</a>
+            <a class="link" href="https://tapsi.ir/terms/passengers">شرایط و قوانین مسافران</a>
+            <a class="link" href="https://tapsi.ir/spaceship/">باشگاه مشتریان</a>
+        </div>
+        <div class="footer-col">
+            <h6>رانندگان</h6>
+            <a class="link" href="https://tapsi.ir/drivers/dl">دانلود اپ سفیر</a>
+            <a class="link" href="https://join.tapsi.ir/driver?utm_source=Homepage&amp;utm_medium=Driver-Footer&amp;utm_campaign=D-ACQ">ثبت نام راننده تاکسی اینترنتی</a>
+            <a class="link" href="https://tapsi.ir/drivers/faq">پرسش&zwnj;های متداول سفیران</a>
+            <a class="link" href="https://tapsi.ir/terms/drivers">شرایط و قوانین سفیران</a>
+            <a class="link" href="https://tapsi-garage.ir/">تپسی گاراژ</a>
+            <a class="link" href="https://join.tapsi.ir/biker?utm_source=Homepage&amp;utm_medium=Biker-Footer&amp;utm_campaign=B-ACQ">ثبت نام راننده موتور</a>
+        </div>
+        <div class="footer-col">
+            <h6>کسب و کارها</h6>
+            <a class="link" href="https://co.tapsi.ir/login">پنل سازمانی تپسی</a>
+            <a class="link" href="https://vouchers.tapsi.ir/login">خرید کد اعتبار و تخفیف</a>
+        </div>
+        <p class="copy-right-mobile">تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است. </p>
+      </div>
+
+        <div class="social-container">
+          <h3>تپسی در شبکه‌های اجتماعی </h3>
+            <div class="social-links">
+            <a href="https://www.facebook.com/TAPSI.ir" target="_blank"><img src="images/facebook.svg" alt="Facebook Logo" height="20px"></a>
+            <a href="https://www.instagram.com/tapsi_ir/" target="_blank"><img src="images/instagram.svg" alt="Instagram Logo" height="20px"></a>
+            <a href="https://twitter.com/TAPSI_ir" target="_blank"><img src="images/twitter.svg" alt="Twitter Logo" height="20px"></a>
+            <a href="https://www.linkedin.com/company/tap30" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Logo" height="20px"></a>
+            <a href="https://t.me/tapsi_cab" target="_blank"><img src="images/telegram.svg" alt="Telegram Logo" height="20px"></a>
+        </div>
+        </div>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>

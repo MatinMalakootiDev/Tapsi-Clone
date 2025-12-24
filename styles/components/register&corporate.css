@@ -1,0 +1,200 @@
+@import url(../global.css);
+
+.driver-register,
+.corporate-services {
+  display: flex;
+  padding: 3rem 4%;
+  justify-content: space-between;
+}
+
+.driver-register {
+  flex-direction: column;
+}
+
+.corporate-services {
+  flex-direction: column-reverse;
+}
+
+.register-info-container,
+.corporate-info-container {
+  display: flex;
+  flex-direction: column;
+  gap:1.25rem;
+}
+
+.register-image img,
+.corporate-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.driver-register .title,
+.corporate-info-container .title{
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-block: 2.5rem 1.25rem;
+}
+
+.register-btns,
+.corporate-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: flex-start;
+}
+
+.driver-register-btn,
+.corporate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 2.5rem;
+  max-width: 14rem;
+  min-width: 13.75rem;
+  width: 14rem;
+}
+
+.driver-register-link,
+.corporate-link {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  border-radius: var(--border-radius);
+  height: 2.5rem;
+  min-width: 6rem;
+  padding: 0 1.5rem;
+  transition: background 0.15s ease;
+}
+
+.driver-register-link:hover,
+.corporate-link:hover {
+  background: #323333;
+}
+
+.driver-app-btn,
+.corporate-discount-code-btn {
+  display: flex;
+}
+
+.ic-left-arrow {
+  background: url(../../images/ic-left-arrow-black.svg?48dc570…) 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.driver-app-link,
+.corporate-discount-code {
+  color: #000;
+  padding: 0 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.driver-register ul {
+  margin-right: 1.25rem;
+}
+
+.register-info .benefits,
+.corporate-info .description {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+@media (min-width:48em) and (max-width: 68em) {
+  .driver-register,
+  .corporate-services {
+    display: flex;
+    gap: 2rem;
+  }
+  .driver-register,
+  .corporate-services {
+    flex-direction: row;
+  }
+
+  .register-info-container,
+  .corporate-info-container {
+    width: 45%;
+    gap:3.125rem;
+  }
+
+  .register-image img,
+  .corporate-image img {
+    height: 350px;
+  }
+
+  .driver-register .title,
+  .corporate-info-container .title{
+    font-size: 1.3rem;
+  }
+
+  .register-info .benefits,
+  .corporate-info .description {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:68em) {
+  .driver-register,
+  .corporate-services {
+    padding: 5rem 10%;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .driver-register,
+  .corporate-services {
+    flex-direction: row;
+  }
+
+  .register-info-container,
+  .corporate-info-container {
+    width: 45%;
+    gap:3.125rem;
+  }
+  .register-image img,
+  .corporate-image img {
+    height: 350px;
+  }
+
+  .driver-register .title,
+  .corporate-info-container .title{
+    font-size: 2rem;
+    margin-block: 0 1.25rem;
+  }
+
+  .register-btns,
+  .corporate-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .driver-register-btn,
+  .corporate-btn {
+    height: 3.5rem;
+  }
+
+  .driver-register-link,
+  .corporate-link {
+    font-size: 1rem;
+    height: 3.25rem;
+    min-width: 6rem;
+  }
+  .driver-app-link,
+  .corporate-discount-code {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .register-info .benefits,
+  .corporate-info .description {
+    font-size: 1.125rem;
+  }
+}

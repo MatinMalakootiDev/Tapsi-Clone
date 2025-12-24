@@ -1,0 +1,43 @@
+@import url(../fonts/font.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --white: #f8f8f8;
+  --black:#141414;
+  --dark-gray:#545454;
+  --light-gray:#acacac;
+  --gray:#9b9b9b;
+  --orange: #ff5b35;
+  --orange-50: #ffede4;
+  --border-radius: 15rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Vazirmatn,iranyekan,roboto, Arial, serif;
+  font-size: 100%;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+main {
+  padding-top: 8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
