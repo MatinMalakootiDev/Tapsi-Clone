@@ -20,9 +20,15 @@ This project emphasizes pixel-accurate layouts, mobile-first responsiveness, and
 | **Tools** | Git, GitHub, VS Code |
 
 ## 🖼 Screenshots
+- Home page (Desktop, Mobile) in screenshots folder
 
-### Desktop View
-![Desktop](./screenshots/desktop.png)
+## 🎯 What I Learned
+- Implementing mobile-first responsive layouts using CSS media queries
+- Structuring reusable UI sections with clean and maintainable CSS
+- Improving layout accuracy by closely matching a real-world production website
 
-### Mobile View
-![Mobile](./screenshots/mobile.png)
+## 🌐 Live Demo
+https://matinmalakootidev.github.io/Tapsi-Clone/
+
+
+
